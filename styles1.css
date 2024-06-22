@@ -1,0 +1,7 @@
+/* This is external CSS */
+.external {
+    padding: 20px;
+    margin: 10px;
+    background-color: aqua; /* External CSS background color */
+}
+

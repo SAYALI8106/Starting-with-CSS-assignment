@@ -1,0 +1,121 @@
+Q.no 1 Create a simple page with some div tags and show different ways to add CSS as well as what happens
+when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the
+project where required.
+Respective code is in index1.html and styles1.css
+->
+1.HTML Structure:
+
+Three <div> elements are created with different combinations of inline, internal, and external CSS.
+
+2.Inline CSS:
+
+The first <div> has an inline CSS style directly applied (style="background-color: yellow;").
+
+3.Internal CSS:
+
+Inside the <style> tags in the <head> section, internal CSS is defined.
+The .internal class sets the text color to blue, the font size to 20px, and the background color to red.
+The .external class sets the border to 2px solid green and the background color to blueviolet.
+
+4.External CSS:
+
+An external CSS file (styles.css) is linked using the <link> tag.
+The .external class in the external CSS sets padding, margin, and background color to aqua.
+   
+
+What Happens When Targeting the Same Elements:
+
+Inline CSS has the highest priority. It will override both internal and external CSS for the same properties.
+
+Internal CSS and external CSS have the same specificity. The one that appears last in the HTML document takes precedence for overlapping properties.
+ 
+
+Result on the Page:
+
+First <div>:
+
+Inline CSS: background-color: yellow (overrides internal and external background color)
+Internal CSS: color: blue, font-size: 20px
+External CSS: border: 2px solid green, padding: 20px, margin: 10px
+
+Second <div>:
+
+Internal CSS: color: blue, font-size: 20px, background-color: red (overrides external background color)
+External CSS: border: 2px solid green, padding: 20px, margin: 10px
+
+Third <div>:
+
+External CSS: background-color: aqua, padding: 20px, margin: 10px
+
+This setup demonstrates how different types of CSS (inline, internal, and external) interact and the cascading nature of CSS priorities based on specificity and order of appearance.
+
+Q.no 2 Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using
+class selectors to apply distinct styling to each paragraph. Follow the BEEM naming convention and
+explain how you've named the classes.
+Respective code is in index2.html and styles2.css
+->
+Explanation of the Code
+
+1.HTML Structure:
+
+Four <p> elements are created, each with a class name following the BEM convention.
+The base class paragraph is applied to all paragraphs to provide common styles.
+Modifiers (paragraph--intro, paragraph--highlight, paragraph--note, paragraph--conclusion) provide unique styles for each paragraph.
+Elements (paragraph__highlight, paragraph__note-text) are used within paragraphs to style specific parts of the text.
+
+2.BEM Naming Convention:
+
+Block: Represents the standalone entity (paragraph).
+Element: Represents a part of the block (paragraph__highlight, paragraph__note-text).
+Modifier: Represents a variation of the block (paragraph--intro, paragraph--highlight, etc.).
+
+3.CSS Styles:
+
+Base Class (paragraph):
+
+font-family: Arial, sans-serif;
+line-height: 1.5;
+margin: 20px;
+
+Element Classes:
+
+.paragraph__highlight: Yellow background and bold text for highlighted text within paragraphs.
+.paragraph__note-text: Italic text and gray color for note text within the note paragraph.
+
+Modifier Classes:
+
+.paragraph--intro: Larger font size, dark blue color.
+.paragraph--highlight: Light yellow background and padding.
+.paragraph--note: Light gray background and padding.
+.paragraph--conclusion: Slightly smaller font size, dark green color, and right-aligned text.
+
+This example demonstrates how to use the BEM methodology for naming classes, which helps in maintaining and reusing CSS styles by clearly defining blocks, elements, and modifiers.
+
+
+Q.no 3 Develop an HTML form with various input elements. Use CSS to style the form, including setting
+background colors for input fields. Create a custom color palette for the form elements, and demonstrate
+how to apply opacity to one of the form sections.
+Respective code is in forms.html and forms.css
+->
+Explanation of the Code
+
+1. HTML Structure:
+
+A <form> element contains various input elements: text input, email input, textarea, checkbox, and a submit button.
+Each input element is associated with a label for better accessibility.
+The form is divided into sections with class names following the BEM convention (form__section, form__section--additional).
+
+2. CSS Styles:
+
+Base styles for the form: Styles applied to the entire form (.form), including max width, margin, padding, background color, border, and font.
+Custom color palette: Defined using CSS variables (:root).
+Form title: Styled with a primary color and centered alignment.
+Form sections: Margin applied to separate sections.
+Opacity: Applied to the additional section (.form__section--additional) with a background color and padding.
+Label styling: Bold and margin for labels.
+Input and textarea styling: Padding, margin, border, border-radius, and different background colors for each input type.
+Button styling: Width, padding, background color, border, font size, cursor, and hover effect for the submit button.
+
+This example demonstrates how to create a styled form using a custom color palette and applying opacity to a specific section, following the BEM naming convention for better organization and maintainability.
+
+

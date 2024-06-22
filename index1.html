@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- Internal CSS -->
+    <style>
+        /* This is internal CSS */
+        .internal {
+            color: blue;
+            font-size: 20px;
+            background-color: red; /* Internal CSS background color */
+        }
+        .external {
+            border: 2px solid green;
+            background-color: blueviolet; /* Internal CSS background color */
+        }
+    </style>
+    <!-- Linking to an external CSS file -->
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="inline internal external" style="background-color: yellow;">
+        <!-- This div has inline, internal, and external CSS -->
+        This div has inline, internal, and external CSS.
+    </div>
+    <div class="internal external">
+        <!-- This div has internal and external CSS -->
+        This div has internal and external CSS.
+    </div>
+    <div class="external">
+        <!-- This div has only external CSS -->
+        This div has only external CSS.
+    </div>
+</body>
+</html>
+

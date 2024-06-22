@@ -1,0 +1,43 @@
+/* Base class for paragraphs */
+.paragraph {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+/* Element for highlighted text within a paragraph */
+.paragraph__highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Element for note text within a note paragraph */
+.paragraph__note-text {
+    font-style: italic;
+    color: gray;
+}
+
+/* Modifier for the intro paragraph */
+.paragraph--intro {
+    font-size: 18px;
+    color: darkblue;
+}
+
+/* Modifier for the highlighted paragraph */
+.paragraph--highlight {
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+/* Modifier for the note paragraph */
+.paragraph--note {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Modifier for the conclusion paragraph */
+.paragraph--conclusion {
+    font-size: 16px;
+    color: darkgreen;
+    text-align: right;
+}
